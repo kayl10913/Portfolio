@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
 }
 
+/*Header Container*/
 .page-container {
     flex: 1;
     display: flex;
@@ -401,8 +402,19 @@ h3 {
     background-color: #b07219; 
 }
 
-.btn {
-    padding-top: 10px;
+.project-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #000000;
+    text-decoration: none;
 }
 
 .card-img-top {
@@ -415,7 +427,107 @@ h3 {
 }
 
 /*Contact Page*/
+.contact-container {
+    max-width: 600px;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
 
+.contact {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 30px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s;
+    color: #000000;
+}
+
+.social-icon:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
+    transform: scale(1.2);
+}
+
+.social-icon:hover .fa-facebook {
+    color: #3b5998;
+}
+
+.social-icon:hover .fa-linkedin {
+    color: #0077b5;
+}
+
+.social-icon:hover .fa-github {
+    color: #333333;
+}
+
+.social-icon:hover .fa-envelope {
+    color: #f39c12;
+}
+
+.social-icon:hover .bi-person-badge {
+    color: #7a7469;
+}
+
+.fab, .fas {
+    font-size: 2rem;
+}
+
+.bi {
+    font-size: 1.8rem;
+}
+
+.bi1 {
+    margin-top: -5px !important;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    color: #343a40;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
+    background-color: #000000;
+}
 
 /*Footer*/
 footer {
