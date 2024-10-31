@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url("https://fonts.googleapis.com/css2?family=Nabla:ital,wght@0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+body {
+    cursor: url('https://cdn.custom-cursor.com/db/13142/32/memes-swole-doge-vs-cheems-cursor.png'), auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-nav {
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #ffc107;
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
+}
+
+.nav-link:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
+}
+
+.logo {
+    width: 100px;
+}
+
+.header-section {
+    height: 79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('img/background.jpg') no-repeat center center/cover;
+    color: black;
+}
+
+.header-section img {
+    max-width: 50%;
+    height: auto;
+}
+
+.img-fluid {
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 12vw;
+    font-family: Nabla;
+    color: #000;
+}
+
+@font-palette-values --Nabla {
+    font-family: Nabla;
+    base-palette: 3;
+}
+
+span {
+    animation: depth 1s ease-in-out alternate infinite;
+    position: relative;
+    display: inline-block;
+    font-variation-settings: "EDPT" 30;
+    font-palette: --Nabla;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    width: 100%;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.roller {
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+.roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -4rem;    
+    }
+    50% {
+        top: -8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #F1FAEE; 
+        font-size: 2.125rem;
+    }
+
+    .roller {
+        height: 2.6rem; 
+        line-height: 2.125rem;  
+    }
+
+    .roller #rolltext {  
+        animation: slide-mob 5s infinite;  
+    }
+
+    @keyframes slide-mob {
+        0% {
+            top: 0;
+        }
+        25% {
+            top: -2.125rem;    
+        }
+        50% {
+            top: -4.25rem;
+        }
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #7a7469;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.cv-link {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    color: #7a7469;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    width: auto;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cv-link:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.cv-link i {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
