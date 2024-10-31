@@ -43,10 +43,6 @@ body {
     width: 100px;
 }
 
-.navbar-brand:hover {
-    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -54,7 +50,7 @@ body {
     padding-bottom: 0px !important;
 }
 
-.container1 {
+.about-container {
     padding: 50px 25px;
     max-width: 900px;
     margin: 60px auto;
@@ -64,21 +60,21 @@ body {
     text-align: center;
 }
 
-.image-container {
+.about-image-container {
     display: flex;              
     justify-content: center;    
     align-items: center;        
     height: 100%;
 }
 
-.image-container img {
+.about-image-container img {
     border-radius: 25px;
     max-width: 120px;
     height: auto;
     margin-bottom: 20px; 
 }
 
-p {
+.typewriter-animation {
     font-size: 1.15rem; 
     line-height: 1.6;
     margin-bottom: 30px; 
@@ -88,7 +84,7 @@ p {
     margin-right: auto;
 }
 
-h2 {
+.about-container h2 {
     font-size: 1.8rem;
     margin-top: 40px;
     color: #343a40;
@@ -98,7 +94,7 @@ h2 {
     display: inline-block;
 }
 
-h2::after {
+.about-container h2::after {
     content: '';
     display: block;
     width: 50px;
@@ -108,12 +104,13 @@ h2::after {
     border-radius: 3px;
 }
 
-.list-group {
+.about-list-group {
     margin-bottom: 30px;
     padding: 0 20px;
+    list-style-type: none;
 }
 
-.list-group-item {
+.about-list-group-item {
     background-color: #fafafa;
     border: 1px solid #e0e0e0; 
     border-radius: 8px;
@@ -123,16 +120,9 @@ h2::after {
     transition: background-color 0.3s ease;
 }
 
-.list-group-item:hover {
+.about-list-group-item:hover {
     cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
     background-color: #f0f0f0;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #343a40;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .cursor {
@@ -163,6 +153,29 @@ h1 {
     to { border-right-color: transparent; }
 }
 
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 30px 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-list-group-item {
+        font-size: 0.95rem;
+    }
+}
+
 footer {
     background-color: #343a40;
     color: white;
@@ -173,26 +186,3 @@ footer {
 footer p {
     margin: 0;
 }
-
-.nav-link {
-    color: #ffffff;
-    transition: color 0.3s;
-}
-
-.nav-link:hover {
-    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
-}
-
-    @media (max-width: 768px) {
-        .container1 {
-            padding: 30px 15px;
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        .list-group-item {
-            font-size: 0.95rem;
-        }
-    }
