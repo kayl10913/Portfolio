@@ -176,12 +176,38 @@ h3 {
 
 .social-icon {
     text-decoration: none;
-    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+    color: #7a7469;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
 }
 
-.social-icon:hover {
+.cv-link {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    color: #7a7469;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    width: auto;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cv-link:hover {
     cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
-    transform: scale(1.5);
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.cv-link i {
+    font-size: 1.5rem;
 }
 
 .bi1 {
