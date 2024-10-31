@@ -67,6 +67,55 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
+    transform: scale(1.05);
+}
+
+.card-languages {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.language {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.language.html { background-color: #e34c26; 
+}
+
+.language.css { 
+    background-color: #8a2be2; 
+}
+
+.language.javascript { 
+    background-color: #f0db4f; color: #000; 
+}
+
+.language.php { 
+    background-color: #0000ff; 
+}
+
+.language.mysql { 
+    background-color: #00758F; 
+}
+
+.language.java { 
+    background-color: #b07219; 
+}
+
+.btn {
+    padding-top: 10px;
 }
 
 .card-img-top {
