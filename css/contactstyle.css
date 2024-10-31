@@ -34,6 +34,7 @@ body {
 }
 
 .navbar-brand:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
     color: #ffc107;
 }
 
@@ -95,6 +96,7 @@ body {
 }
 
 .btn-primary:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
     background-color: #e0a800;
 }
 
@@ -116,6 +118,7 @@ footer p {
 }
 
 .nav-link:hover {
+    cursor: url('https://cdn.custom-cursor.com/db/13141/32/memes-swole-doge-vs-cheems-pointer.png'), auto;
     color: #ffc107;
 }
 
