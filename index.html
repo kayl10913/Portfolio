@@ -18,19 +18,32 @@
                 <a class="navbar-brand" href="#">
                     <img src="img/logo2.png" alt="kaylmatyu" class="logo">
                 </a>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-center flex-grow-1" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Kayl</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <span>Kayl</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">
+                                <span>About</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="project.html">Project</a>
+                            <a class="nav-link" href="project.html">
+                                <span>Project</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">
+                                <span>Contact</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -39,31 +52,41 @@
 
         <header class="header-section" id="header">
             <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 text-center">
-                        <img src="img/MainPic.jpg" alt="Kyle" class="img-fluid mb-4">
-                    </div>
-                    <div class="col-md-6 d-flex flex-column justify-content-center text-center">
-                        <div class="main">
-                            <h1>
-                                <span>K</span><span>y</span><span>l</span><span>e</span>
-                                <span> </span>
-                                <span>M</span><span>a</span><span>t</span><span>t</span><span>h</span><span>e</span><span>w</span>
-                                <span> </span>
-                                <span>C</span><span>a</span><span>l</span><span>i</span><span>n</span><span>g</span><span>a</span><span>s</span><span>a</span><span>n</span>
-                            </h1>
-                            <div class="main roller">
-                                <span id="rolltext">WEB DESIGN<br/>
-                                GRAPHIC DESIGN<br/>
-                                FULL STACK DEVELOPER<br/>
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <div class="profile-image-container">
+                            <div class="image-wrapper">
+                                <img src="img/MainPic.jpg" alt="Profile" class="img-fluid">
+                                <div class="image-overlay"></div>
                             </div>
-                            <p>yueihdch hbftuayybiuixsjdcafgywirbejf fyeiwefuvgygbdhcnaiq
-                                ubvfgiuhdjsbcsnjid cvy8fdauioufbnahyaus
-                                ifdsgiuyss foasiudhhafyhda
-                            </p>
-                            <a href="https://drive.google.com/file/d/1no8etwv2_CR6gB1DoCCmLX8hkcXfsTNM/view?usp=sharing" target="_blank" class="social-icon cv-link">
-                                <i class="bi bi-person-badge"></i> VIEW CV
-                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="header-content">
+                            <div class="name-container">
+                                <h1>
+                                    <span class="static-text">Hi! I'm</span>
+                                    <span class="typing-name"></span>
+                                </h1>
+                            </div>
+                            <div class="skills-roller">
+                                <div class="roller">
+                                    <span id="rolltext" class="text-center">WEB DESIGN<br/>
+                                    GRAPHIC DESIGN<br/>
+                                    FULL STACK DEVELOPER<br/></span>
+                                </div>
+                            </div>
+                            <div class="header-cta d-flex justify-content-center">
+                                <a href="https://drive.google.com/file/d/1no8etwv2_CR6gB1DoCCmLX8hkcXfsTNM/view?usp=sharing" 
+                                   target="_blank" 
+                                   class="cta-button">
+                                    <i class="bi bi-person-badge"></i> VIEW CV
+                                </a>
+                                <a href="contact.html" 
+                                   class="cta-button ms-3">
+                                    <i class="bi bi-envelope"></i> CONTACT ME
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,10 +94,79 @@
         </header>
     </div>
     
-    <footer class="text-center mt-5">
-        <p>&copy; 2024 - Kyle Matthew D. Calingasan</p>
+    <footer>
+        <div class="footer-content d-flex justify-content-between align-items-center">
+            <p class="mb-0">&copy; 2024 - Kyle Matthew D. Calingasan</p>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" class="social-icon" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="social-icon" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav .nav-link");
+            document.body.classList.add("fade-in");
+
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute("href");
+
+                    document.body.classList.remove("fade-in");
+                    document.body.classList.add("fade-out");
+
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 500);
+                });
+            });
+        });
+    </script> 
+    <style>
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00; /* Change color on hover */
+            text-decoration: underline; /* Underline effect */
+        }
+    </style>
+    <script>
+        document.querySelector('.profile-image-container img').addEventListener('click', function() {
+            this.classList.toggle('grayscale');
+            
+            // Remove the grayscale class after animation completes
+            if (!this.classList.contains('grayscale')) {
+                setTimeout(() => {
+                    this.style.transform = 'rotateY(0deg) scale(1)';
+                }, 500);
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nameText = "Kyle Matthew Calingasan";
+            let nameIndex = 0;
+            let currentName = '';
+            
+            function typeName() {
+                currentName = nameText.slice(0, ++nameIndex);
+                document.querySelector('.typing-name').textContent = currentName;
+                
+                if (currentName.length === nameText.length) {
+                    return;
+                }
+                setTimeout(typeName, 100); // Adjust speed here (milliseconds)
+            }
+            typeName();
+        });
+    </script>
 </body>
 </html>
